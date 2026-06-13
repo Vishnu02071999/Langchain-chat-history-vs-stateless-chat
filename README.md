@@ -63,14 +63,9 @@ Does not save previous messages.
 
 Simpler implementation with lower memory requirements.
 
-# Key Difference
-Feature	            Chat History Version	      Stateless Version
-Stores Messages	         ✅ Yes	                     ❌ No
-Conversation Record	     ✅ Yes	                     ❌ No
-Simplicity	             Moderate	                Very Simple
-Memory Foundation	       ✅ Yes	                     ❌ No
 
-Note: In the first implementation, the history is stored locally in a Python list but is not sent back to the model. Therefore, the model itself does not remember previous messages. The list simply keeps a record of the conversation.
+
+# Note: In the first implementation, the history is stored locally in a Python list but is not sent back to the model. Therefore, the model itself does not remember previous messages. The list simply keeps a record of the conversation.
 
 # Technologies Used
 Python
