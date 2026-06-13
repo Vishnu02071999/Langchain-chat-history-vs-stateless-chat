@@ -17,6 +17,35 @@ How conversation context affects chatbot design
 
 Basic usage of environment variables with python-dotenv
 
+# Example
+# # Stateless Chatbot (No Conversation Memory)
+
+The chatbot treats every message as an independent request.
+
+Conversation:
+
+You: Which is bigger, 3 or 5?
+
+Chatbot: 5
+
+You: Multiply the bigger number by 10
+
+Chatbot: Lets assume the number is x, multiplying it by 10 will give 10x.
+
+# # Stateful Chatbot (Conversation Memory)
+
+The chatbot receives the entire conversation history with every request.
+
+Conversation:
+
+You: Which is bigger, 3 or 5?
+
+Chatbot: 5
+
+You: Multiply the bigger number by 10
+
+Chatbot: 50
+
 # Project Structure
 Version 1: Chat History Tracking
 
